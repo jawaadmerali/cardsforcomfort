@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Of Pizza Website</title>
+  <link href="order_summ.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="pizza.ico" />
+</head>
+
+<body>
+
+  <div class="nav">
+    <a href="index.html">HOME</a>
+
+
+    <a href="index.html#menu">MENU</a>
+
+    <a href="index.html#contact">CONTACT</a>
+
+    <a href="special_events.html">EVENTS</a>
+
+
+
+    <div class="dropdown">
+      <a href="javascript:void(0);" class="cta">ORDER</a>
+
+      <div class="dropdownContent">
+        <a href="#original">Appetizers</a>
+        <a href="#big">Classics</a>
+        <a href="#somethingDifferent">Pizzas</a>
+        <a href="#other">Light</a>
+        <!-- <a href="create.html" class="cta">Create pizza</a> -->
+      </div>
+    </div>
+  </div>
+
+  <section class="landing" id="landing">
+    <div class="hero">
+      <h1>MENU <span class="accent">&</span> ORDER</h1>
+    </div>
+
+    <!-- <div onclick="document.getElementById('order').scrollIntoView();" class="downLink">
+      <p>ORDER PIZZA</p>
+      <img src="Images/arrow.png" class="down">
+    </div> -->
+
+  </section>
+
+  <section class="order">
+    <h1 id="order">ORDER</h1>
+
+    <details open id="original">
+      <summary>
+        <h3>APPETIZERS AND SIDES</h3>
+      </summary>
+
+      <div class="pizzas">
+        <div class="pizza">
+          <img
+            src="https://www.eatingwell.com/thmb/rmF5_qObu-ngoOPJS7ufCbAoRjE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spinach-artichoke-dip-1000-ck-2c4962e581f84069bb15ad54a0da20f6.jpg">
+
+          <h3>SPINACH & ARTICHOKE DIP</h3>
+
+          <p>Creamy spinach and artichoke dip served with crispy tortilla chips, a perfect shareable starter.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>10.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+
+        <div class="pizza">
+
+          <img src="https://cafedelites.com/wp-content/uploads/2016/06/Baked-Potato-Wedges-IMAGE-63.jpg">
+
+          <h3>GARLIC PARMESAN SWEET POTATO WEDGES</h3>
+
+          <p>Crispy sweet potato wedges tossed in garlic Parmesan seasoning, served with a side of aioli for dipping.
+          </p>
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>8.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+
+        <div class="pizza">
+          <img src="https://www.jessicagavin.com/wp-content/uploads/2019/04/grilled-asparagus-3-1200.jpg">
+
+          <h3>GRILLED ASPARAGUS SPEARS</h3>
+
+          <p>Fresh asparagus spears lightly grilled and seasoned, offering a flavorful and healthy side option.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>9.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+      </div>
+    </details>
+
+    <details open id="big">
+      <summary>
+        <h3>GRILLED CLASSICS</h3>
+      </summary>
+
+      <div class="pizzas">
+        <div class="pizza">
+          <img src="https://greenvillejournal.com/wp-content/uploads/2020/07/Grilling-stock-1.jpg">
+
+          <h3>RIBEYE STEAK</h3>
+
+          <p>A succulent 12-ounce ribeye steak, expertly seasoned and flame-grilled to perfection. Served with a choice
+            of
+            garlic mashed potatoes or crispy seasoned fries. Currently being made by our best chef.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>27.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+
+        <div class="pizza">
+          <img
+            src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2017_24/1221411/bbq-skewered-shrimp-today-170613-tease.jpg">
+
+          <h3>GRILLED SHRIMP SKEWERS</h3>
+
+          <p>Juicy shrimp skewers marinated in a zesty blend of herbs and spices, then grilled to a smoky perfection.
+            Served over a bed of cilantro-lime rice with a side of grilled asparagus.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>20.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+
+        <div class="pizza">
+          <img
+            src="https://media.istockphoto.com/id/520422120/photo/sausages-on-the-barbecue-grill-with-flames.jpg?s=612x612&w=0&k=20&c=EYbiigThl-Hp0iUYZUpNLT3yWy6SlldzCMC0WfYTblY=">
+
+          <h3>BRATWURST SAUSAGES</h3>
+
+          <p>Authentic bratwurst sausages grilled to a delightful crispness, served with sauerkraut and stone-ground
+            mustard. Accompanied by a side of garlic Parmesan sweet potato wedges.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>18.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+
+        <div class="pizza">
+          <img
+            src="https://www.simplyrecipes.com/thmb/SQAz3auopwpC9bCyBO41DvbQIjo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2014__05__grilled-swordfish-steaks-method-2-029b98cb34034acb89f7bc2e82d7879d.jpg">
+
+          <h3>GRILLED SWORDFISH</h3>
+
+          <p>Swordfish steaks marinated in a lemon herb blend and grilled to perfection. Served with quinoa pilaf and
+            grilled lemon wedges, offering a light and flavorful dining experience.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>24.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+      </div>
+    </details>
+
+
+    <details open id="somethingDifferent">
+      <summary>
+        <h3>GOURMET PIZZAS</h3>
+      </summary>
+
+      <div class="pizzas">
+        <div class="pizza">
+          <img
+            src="https://www.simplyrecipes.com/thmb/YRLOtBQbCrASH4QdUkX0_QcyHZU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2015__05__how-to-grill-pizza-horiz-a-1600-89d2838940b340b4b5a836253f0a07ca.jpg">
+
+          <h3>PIZZA SUPREME</h3>
+
+          <p>Thin, crispy crust topped with marinara, mozzarella, Italian sausage, pepperoni, bell peppers, red onions,
+            and fresh basil. A smoky twist on the classical pizza experience.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>17.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+
+        <div class="pizza">
+          <img src="https://ameessavorydish.com/wp-content/uploads/2015/05/BBQ-chicken-pizza-feature.jpg">
+
+          <h3>BBQ CHICKEN FLATBREAD</h3>
+
+          <p>Our signature BBQ chicken flatbread features tender grilled chicken, red onions, and cilantro atop a crispy
+            flatbread. Drizzled with tangy barbecue sauce and melted cheddar cheese.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>16.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+
+        <div class="pizza">
+          <img
+            src="https://i0.wp.com/cookswellwithothers.com/wp-content/uploads/2019/08/IMG_0906.jpg?resize=768%2C1024&ssl=1">
+
+          <h3>MARGERITA FLATBREAD</h3>
+
+          <p>Classic Margherita flatbread with fresh tomatoes, mozzarella, and basil, grilled to perfection for a
+            delightful blend of flavors.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>16.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+
+        <div class="pizza">
+          <img src="https://www.afarmgirlsdabbles.com/wp-content/uploads/2018/08/AFarmgirlsDabbles_AFD-2-sq.jpg">
+
+          <h3>VEGETARIAN DELIGHT FLATBREAD</h3>
+
+          <p>A medley of grilled vegetables including zucchini, bell peppers, and red onions, generously layered on a
+            crisp flatbread with a blend of cheeses and savory herbs.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>15.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+      </div>
+    </details>
+
+
+    <details open id="other">
+      <summary>
+        <h3>LIGHTER FARE</h3>
+      </summary>
+
+      <div class="pizzas">
+        <div class="pizza">
+          <img
+            src="https://www.afarmgirlsdabbles.com/wp-content/uploads/2018/07/grilled-vegetable-salad_AFarmgirlsDabbles_AFD-6.jpg">
+
+          <h3>GRILLED VEGATABLE SALAD</h3>
+
+          <p>A vibrant salad showcasing a medley of grilled vegetables including asparagus, zucchini, bell peppers, and
+            cherry tomatoes. Tossed with mixed greens and feta cheese, finished with a balsamic vinaigrette.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>14.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+
+        <div class="pizza">
+          <img src="https://whatshouldimakefor.com/wp-content/uploads/2019/05/IMG_1574.jpg">
+
+          <h3>GRILLED CHICKEN CAESAR SALAD</h3>
+
+          <p>Crisp romaine lettuce topped with grilled chicken, Parmesan cheese, and croutons, dressed in a classic
+            Caesar dressing.</p>
+
+          <div class="container">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+            <p class="price"><span class="symbol">$</span>13.99</p>
+          </div>
+
+          <button><a href="recieved.html">ORDER</a></button>
+        </div>
+      </div>
+    </details>
+
+    <!-- <details open>
+      <summary>
+        <h3>OR, CREATE YOUR OWN</h3>
+      </summary>
+
+      <div class="pizzas">
+        <div class="pizza">
+          <img src="Images/Pizzas/makeYourOwn.webp">
+
+          <h3>MAKE YOUR OWN</h3>
+
+          <p>What will you put on your pizza? Choose between many fresh ingredients to create your own original pizza.
+          </p>
+
+          <p class="price"><span class="symbol">$</span>15 – 30</p>
+
+          <a href="create.html">
+            <button>CREATE</button>
+          </a>
+        </div>
+      </div>
+    </details> -->
+  </section>
+
+  <section class="footer">
+    <div class="column title">
+      <h1>Game Day <span class="accent">Grill</span></h1>
+
+      <p>Serving fresh, delicious food since 1931.</p>
+
+      <div class="socialMedia">
+        <ion-icon name="logo-twitter"></ion-icon>
+
+        <ion-icon name="logo-facebook"></ion-icon>
+
+        <ion-icon name="logo-youtube"></ion-icon>
+
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+    </div>
+
+    <div class="column home">
+      <h3>HOME</h3>
+
+      <a href="order.html">Menu</a>
+
+      <a href="index.html#whyUs">Why us</a>
+
+      <a href="index.html#contact">Contact us</a>
+    </div>
+
+    <div class="column order">
+      <h3>ORDER</h3>
+
+      <a href="original">Appetizers + Sides</a>
+
+      <a href="#big">Grilled Classics</a>
+
+      <a href="#somethingDifferent">Gourmet Pizzas</a>
+
+      <a href="#other">Lighter Fare</a>
+
+    </div>
+
+    <div class="column businessHours">
+      <h3>BUSINESS HOURS</h3>
+
+      <p>Weekdays: 10AM – 12AM</p>
+
+      <p>Weekends: 12AM – 10PM</p>
+
+      <p>Holidays: Closed</p>
+    </div>
+
+    <div class="column info">
+      <h3>ADDRESS</h3>
+
+      <p>42 Flame Street</p>
+      <p>Grillville, GS 54321</p>
+
+      <h3 class="phoneNumber">PHONE NUMBER</h3>
+
+      <p>+1 512-555-7890</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+
+<style>
+
+
+</style>
