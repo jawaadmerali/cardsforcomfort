@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="reserve.css" rel="stylesheet" type="text/css">
+  <title>Reservations</title>
+</head>
+
+<body>
+  <div class="nav">
+    <a href="index.html">HOME</a>
+
+    <a href="index.html">MENU</a>
+
+    <a href="special_events.html">EVENTS</a>
+
+    <a href="order.html">CONTACT</a>
+
+    <div class="dropdown">
+      <a href="order.html" class="cta">ORDER</a>
+
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+  <section class="landing" id="landing">
+    <div class="hero">
+      <h1>RESER<span class="accent">VATIONS</span></h1>
+    </div>
+
+    <div onclick="document.getElementById('menu').scrollIntoView();" class="downLink">
+      <p>Table Numbers</p>
+    </div>
+  </section>
+
+
+
+
+  <section class="reserve">
+    <h1>Congratulations! A table is now being <span class="accent">reserved</span> for you</h1>
+    <h1 class="rando">Your table number is:</h1>
+  </section>
+
+
+
+
+  <script>
+    let element = document.querySelector('.rando');
+
+    let rando = Math.floor(Math.random() * 10) + 1;
+    let randostr = rando.toString();
+
+
+    // Get HTML content
+    // returns "<p>Hello world!</p>"
+    let html = rando.innerHTML;
+
+    // Add HTML to the end of an element's existing content
+    element.innerHTML += ' ' + randostr;
+  </script>
+
+
+
+
+
+
+  <section class="footer">
+    <div class="column title">
+      <!-- <h1>Sample Of, <span class="accent">Pizza Website</span></h1> -->
+
+      <p>Serving fresh, delicious pizza since 1931.</p>
+
+      <div class="socialMedia">
+        <ion-icon name="logo-twitter"></ion-icon>
+
+        <ion-icon name="logo-facebook"></ion-icon>
+
+        <ion-icon name="logo-youtube"></ion-icon>
+
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+    </div>
+
+
+
+
+    <div class="column home">
+      <h3>HOME</h3>
+
+    </div>
+
+
+    <div class="column businessHours">
+      <h3>BUSINESS HOURS</h3>
+
+      <p>Weekdays: 10AM – 12AM</p>
+
+      <p>Weekends: 12AM – 10PM</p>
+
+      <p>Holidays: Closed</p>
+    </div>
+
+    <div class="column info">
+      <h3>ADDRESS</h3>
+
+      <p>69 Pizza Lane</p>
+      <p>Pizza City, PS 12345</p>
+
+      <h3 class="phoneNumber">PHONE NUMBER</h3>
+
+      <p>+123 456 7890</p>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
