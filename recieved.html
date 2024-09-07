@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Recieved</title>
+  <link rel="stylesheet" href="recieved_styles.css">
+</head>
+
+<body>
+  <div class="nav">
+    <a href="index.html">HOME</a>
+
+    <a href="index.html">MENU</a>
+
+    <a href="index.html">CONTACT</a>
+
+    <a href="special_events.html">EVENTS</a>
+
+    <div class="dropdown">
+      <a href="order.html" class="cta">ORDER</a>
+
+      <div class="dropdownContent">
+        <a href="order.html#original">Appetizers</a>
+        <a href="order.html#big">Classics</a>
+        <a href="order.html#somethingDifferent">Pizzas</a>
+        <a href="order.html#other">Light</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="landing" id="landing">
+    <div class="hero">
+      <!-- <span class="accent"> Grill</span> -->
+      <h1>Order <span class="accent">Confirmation</span>.</h1>
+
+      <!--  -->
+
+      <div class="container">
+        <a href="order.html">
+          <button class="cta">NEW ORDER</button>
+        </a>
+
+        <!-- <a onclick="document.getElementById('menu').scrollIntoView();">
+          <button>VIEW MENU</button>
+        </a> -->
+
+        <a onclick="document.getElementById('menu').scrollIntoView();">
+          <button class="cta">VIEW MENU</button>
+        </a>
+      </div>
+    </div>
+    <!-- <img class="downlink" src="https://i.pinimg.com/1200x/dc/39/81/dc398179aadbcce3c6eda958a942a274.jpg" alt="heart"> -->
+  </section>
+
+
+  <section class="menu">
+    <div class="payme">
+      <h3>Pay here!</h3>
+      <div id="paypal-button-container"></div>
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+      data-sdk-integration-source="button-factory"></script>
+    <script>
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal',
+
+        },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '1'
+              }
+            }]
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        }
+      }).render('#paypal-button-container');
+    </script>
+
+
+    <h2>A Letter of Gratitude:</h2>
+    <div class="pizzas">
+      <div class="pizza">
+        <p>Thank you for choosing Game Day Grill! We appreciate your order and trust in our flavors to elevate your
+          dining experience. Our kitchen is buzzing with excitement to craft your favorite dishes with precision and
+          care. Remember, it's not just a meal; it's a celebration of teamwork – from our kitchen to your table.</p>
+
+        <p>Written with love and care by: <br> Jawaad Merali & Advait Mannepalli</p>
+        <!-- Secret Garden Fest -->
+        <p class="ty">Thank You!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="column title">
+      <h1>Game Day <span class="accent">Grill</span></h1>
+
+      <p>Serving fresh, delicious food since 1931.</p>
+
+      <div class="socialMedia">
+        <ion-icon name="logo-twitter"></ion-icon>
+
+        <ion-icon name="logo-facebook"></ion-icon>
+
+        <ion-icon name="logo-youtube"></ion-icon>
+
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+    </div>
+
+    <div class="column home">
+      <h3>HOME</h3>
+
+      <a href="order.html">Menu</a>
+
+      <a href="#whyUs">Why us</a>
+
+      <a href="#contact">Contact us</a>
+    </div>
+
+    <div class="column order">
+      <h3>ORDER</h3>
+
+      <a href="order.html#original">Appetizers + Sides</a>
+
+      <a href="order.html#big">Grilled Classics</a>
+
+      <a href="order.html#somethingDifferent">Gourmet Pizzas</a>
+
+      <a href="order.html#other">Lighter Fare</a>
+
+    </div>
+
+    <div class="column businessHours">
+      <h3>BUSINESS HOURS</h3>
+
+      <p>Weekdays: 10AM – 12AM</p>
+
+      <p>Weekends: 12AM – 10PM</p>
+
+      <p>Holidays: Closed</p>
+    </div>
+
+    <div class="column info">
+      <h3>ADDRESS</h3>
+
+      <p>42 Flame Street</p>
+      <p>Grillville, GS 54321</p>
+
+      <h3 class="phoneNumber">PHONE NUMBER</h3>
+
+      <p>+1 512-555-7890</p>
+    </div>
+  </section>
+</body>
+
+</html>
