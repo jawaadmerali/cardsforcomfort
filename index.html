@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Day Grill</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="pizza.ico" />
+</head>
+
+<body>
+
+  <div class="nav">
+    <a onclick="document.getElementById('landing').scrollIntoView();">HOME</a>
+
+    <a onclick="document.getElementById('menu').scrollIntoView();">MENU</a>
+
+    <a onclick="document.getElementById('contact').scrollIntoView();">CONTACT</a>
+
+    <a href="special_events.html">EVENTS</a>
+
+    <div class="dropdown">
+      <a href="order.html" class="cta">ORDER</a>
+
+      <div class="dropdownContent">
+        <a href="order.html#original">Appetizers</a>
+        <a href="order.html#big">Classics</a>
+        <a href="order.html#somethingDifferent">Pizzas</a>
+        <a href="order.html#other">Light</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="landing" id="landing">
+    <div class="hero">
+      <!-- <span class="accent"> Game Day Grill</span> -->
+      <h1>GAME DAY <span class="accent">GRILL</span></h1>
+        </h1>
+
+        <!--  -->
+
+        <div class="container">
+          <a href="order.html">
+            <button class="cta">ORDER NOW</button>
+          </a>
+
+          <!-- <a onclick="document.getElementById('menu').scrollIntoView();">
+          <button>VIEW MENU</button>
+        </a> -->
+
+          <a onclick="document.getElementById('menu').scrollIntoView();">
+            <button class="cta">VIEW MENU</button>
+          </a>
+        </div>
+    </div>
+
+    <div onclick="document.getElementById('menu').scrollIntoView();" class="downLink">
+      <p>ITEMS</p>
+      <!-- <img src="Images/arrow.png" class="down"> -->
+    </div>
+
+
+  </section>
+
+  <section class="menu">
+    <h1 id="menu">MENU</h1>
+
+    <div class="pizzas">
+      <div class="pizza">
+        <img src="https://greenvillejournal.com/wp-content/uploads/2020/07/Grilling-stock-1.jpg">
+
+        <h3>RIBEYE STEAK</h3>
+
+        <p>A succulent 12-ounce ribeye steak, expertly seasoned and flame-grilled to perfection. Served with a choice of
+          garlic mashed potatoes or crispy seasoned fries. Currently being made by our best chef.</p>
+
+        <p class="price"><span class="symbol">$</span>27.99</p>
+      </div>
+
+      <div class="pizza">
+        <img
+          src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2017_24/1221411/bbq-skewered-shrimp-today-170613-tease.jpg">
+
+        <h3>GRILLED SHRIMP</h3>
+
+        <p>Juicy shrimp skewers marinated in a zesty blend of herbs and spices, then grilled to a smoky perfection.
+          Served over a bed of cilantro-lime rice with a side of grilled asparagus.</p>
+
+        <p class="price"><span class="symbol">$</span>20.99</p>
+      </div>
+
+      <div class="pizza">
+        <img src="https://ameessavorydish.com/wp-content/uploads/2015/05/BBQ-chicken-pizza-feature.jpg">
+
+        <h3>BBQ CHICKEN FLATBREAD</h3>
+
+        <p>Our signature BBQ chicken flatbread features tender grilled chicken, red onions, and cilantro atop a crispy
+          flatbread. Drizzled with tangy barbecue sauce and melted cheddar cheese.</p>
+
+        <p class="price"><span class="symbol">$</span>16.99</p>
+      </div>
+
+      <div class="pizza">
+        <img
+          src="https://www.afarmgirlsdabbles.com/wp-content/uploads/2018/07/grilled-vegetable-salad_AFarmgirlsDabbles_AFD-6.jpg">
+
+        <h3>GRILLED VEGATABLE SALAD</h3>
+
+        <p>A vibrant salad showcasing a medley of grilled vegetables including asparagus, zucchini, bell peppers, and
+          cherry tomatoes. Tossed with mixed greens and feta cheese, finished with a balsamic vinaigrette.</p>
+
+        <p class="price"><span class="symbol">$</span>14.99</p>
+      </div>
+    </div>
+
+    <div class="pizzas">
+      <div class="pizza">
+        <img
+          src="https://media.istockphoto.com/id/520422120/photo/sausages-on-the-barbecue-grill-with-flames.jpg?s=612x612&w=0&k=20&c=EYbiigThl-Hp0iUYZUpNLT3yWy6SlldzCMC0WfYTblY=">
+
+        <h3>BRATWURST SAUSAGES</h3>
+
+        <p>Authentic bratwurst sausages grilled to a delightful crispness, served with sauerkraut and stone-ground
+          mustard. Accompanied by a side of garlic Parmesan sweet potato wedges.</p>
+
+        <p class="price"><span class="symbol">$</span>18.99</p>
+      </div>
+
+      <div class="pizza">
+        <img
+          src="https://www.simplyrecipes.com/thmb/SQAz3auopwpC9bCyBO41DvbQIjo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2014__05__grilled-swordfish-steaks-method-2-029b98cb34034acb89f7bc2e82d7879d.jpg">
+
+        <h3>GRILLED SWORDFISH</h3>
+
+        <p>Swordfish steaks marinated in a lemon herb blend and grilled to perfection. Served with quinoa pilaf and
+          grilled lemon wedges, offering a light and flavorful dining experience.</p>
+
+        <p class="price"><span class="symbol">$</span>24.99</p>
+      </div>
+
+      <div class="pizza">
+        <img
+          src="https://www.simplyrecipes.com/thmb/YRLOtBQbCrASH4QdUkX0_QcyHZU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2015__05__how-to-grill-pizza-horiz-a-1600-89d2838940b340b4b5a836253f0a07ca.jpg">
+
+        <h3>PIZZA SUPREME</h3>
+
+        <p>Thin, crispy crust topped with marinara, mozzarella, Italian sausage, pepperoni, bell peppers, red onions,
+          and fresh basil. A smoky twist on the classical pizza experience.</p>
+
+        <p class="price"><span class="symbol">$</span>17.99</p>
+      </div>
+
+      <!-- <div class="pizza">
+        <a href="create.html" class="create">
+          <img src="https://www.freeiconspng.com/thumbs/question-mark-icon/black-question-mark-icon-clip-art-10.png">
+
+          <h3>CUSTOM PIZZA</h3>
+
+          <p>What will you put on your pizza? Choose between many fresh ingredients to create your own original pizza.
+          </p>
+
+          <p class="price"><span class="symbol">$</span>15 – 30</p>
+        </a>
+      </div> -->
+    </div>
+
+    <div class="linkContainer">
+      <a href="order.html">VIEW OUR FULL MENU</a>
+      <!-- <img src="Images/arrow.png"> -->
+    </div>
+
+    <hr>
+  </section>
+
+  <section class="whyUs">
+    <h1 id="whyUs">WHY US</h1>
+
+    <div class="features">
+      <div class="feature">
+        <h3>GRILLING MASTERY</h3>
+
+        <!-- <ion-icon name="pizza"></ion-icon> -->
+
+        <img class="box" src="https://img.freepik.com/premium-photo/man-grilling-meat-grill_747128-105.jpg">
+
+        <p>Experience culinary excellence with our expertly grilled dishes, showcasing a mastery of the grill that
+          elevates every bite.</p>
+      </div>
+
+      <div class="feature">
+        <h3>FAST DELIVERY</h3>
+
+        <!-- <ion-icon name="hourglass"></ion-icon> -->
+
+        <img class="box"
+          src="https://images.unsplash.com/photo-1518281361980-b26bfd556770?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+        <p>Lightning fast delivery, from our kitchen to your table. Less than 20 minutes, guaranteed (or your money
+          back)! As simple as that.</p>
+      </div>
+
+      <div class="feature">
+        <h3>UNIQUE CREATIONS</h3>
+
+        <!-- <ion-icon name="earth"></ion-icon> -->
+
+        <img class="box"
+          src="https://savorwithjennifer.com/wp-content/uploads/2019/04/25-Easy-and-Unique-Grilling-Ideas-and-Recipes-15-of-23.jpg">
+
+        <p>Explore innovative dishes where traditional favorites are reinvented, each grilled to perfection for a
+          distinctive culinary experience.</p>
+      </div>
+    </div>
+
+    <hr>
+  </section>
+
+
+  <section class="contact">
+    <h1 id="contact">CONTACT US</h1>
+
+    <div class="container">
+      <div class="card open">
+
+        <img class="open_hours" src="Images/open.webp">
+
+
+        <h3>BUSINESS HOURS</h3>
+
+        <div class="hours">
+          <div class="table">
+            <div class="left">
+              <p>Weekdays</p>
+            </div>
+
+            <div class="right">
+              <p class="accent">10AM – 12PM</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="table">
+            <div class="left">
+              <p>Weekends</p>
+            </div>
+
+            <div class="right">
+              <p class="accent">12AM – 10PM</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="table">
+            <div class="left">
+              <p>Holidays</p>
+            </div>
+
+            <div class="right">
+              <p class="accent">Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="book">
+        <div class="card book">
+
+          <img class="card_table" src="Images/table.webp">
+
+          <h3>BOOK A TABLE</h3>
+
+          <input placeholder="Name">
+
+          <input placeholder="Email">
+
+          <input placeholder="Phone number">
+
+          <div class="container">
+            <input placeholder="Booking Date &" class="date">
+
+            <input placeholder="Time" class="time">
+          </div>
+
+          <button><a href="reservation.html">RESERVE TABLE</a></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="contactInfo">
+      <p>Find us at <span class="accent">42 Flame Street, Grillville, GS 54321</span>.</p>
+
+      <p>Call us at <span class="accent">+1 512-555-7890</span>.</p>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="column title">
+      <h1>Game Day <span class="accent">Grill</span></h1>
+
+      <p>Serving fresh, delicious food since 1931.</p>
+
+      <div class="socialMedia">
+        <ion-icon name="logo-twitter"></ion-icon>
+
+        <ion-icon name="logo-facebook"></ion-icon>
+
+        <ion-icon name="logo-youtube"></ion-icon>
+
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+    </div>
+
+    <div class="column home">
+      <h3>HOME</h3>
+
+      <a href="order.html">Menu</a>
+
+      <a href="#whyUs">Why us</a>
+
+      <a href="#contact">Contact us</a>
+    </div>
+
+    <div class="column order">
+      <h3>ORDER</h3>
+
+      <a href="order.html#original">Appetizers + Sides</a>
+
+      <a href="order.html#big">Grilled Classics</a>
+
+      <a href="order.html#somethingDifferent">Gourmet Pizzas</a>
+
+      <a href="order.html#other">Lighter Fare</a>
+
+    </div>
+
+    <div class="column businessHours">
+      <h3>BUSINESS HOURS</h3>
+
+      <p>Weekdays: 10AM – 12AM</p>
+
+      <p>Weekends: 12AM – 10PM</p>
+
+      <p>Holidays: Closed</p>
+    </div>
+
+    <div class="column info">
+      <h3>ADDRESS</h3>
+
+      <p>42 Flame Street</p>
+      <p>Grillville, GS 54321</p>
+
+      <h3 class="phoneNumber">PHONE NUMBER</h3>
+
+      <p>+1 512-555-7890</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
+
+<head>
+  <title>Pay me</title>
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <div id="paypal-button-container"></div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+    data-sdk-integration-source="button-factory"></script>
+  <script>
+    paypal.Buttons({
+      style: {
+        shape: 'pill',
+        color: 'gold',
+        layout: 'vertical',
+        label: 'paypal',
+
+      },
+      createOrder: function (data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '1'
+            }
+          }]
+        });
+      },
+      onApprove: function (data, actions) {
+        return actions.order.capture().then(function (details) {
+          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+        });
+      }
+    }).render('#paypal-button-container');
+  </script>
+</body> -->
